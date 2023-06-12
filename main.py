@@ -223,7 +223,7 @@ df_ml = pd.read_excel('df_machler.xlsx')
 
 #vectorizacion
 from sklearn.feature_extraction.text import TfidfVectorizer
-tfidf = TfidfVectorizer(max_features=30)#con 100 y 50 en el otro jala
+tfidf = TfidfVectorizer(max_features=20)#con 100 y 50 en el otro jala
 vectorized_data = tfidf.fit_transform(df_ml['tags'].values)
 
 vectorized_dataframe = pd.DataFrame(vectorized_data.toarray(), index=df_ml['tags'].index.tolist())
