@@ -216,7 +216,7 @@ def get_director(nombre_director):
     return respuesta
 
 
-
+"""
 #generemos el modelo para hacer el coseno de similitud:
 #con la base un poco mas pequeña, por el computo y memoria corta generemos la ultyima funcion
 df_ml = pd.read_excel('df_machler.xlsx')
@@ -252,3 +252,4 @@ def recomendacion(titulo):
     movie_list = sorted(list(enumerate(distances)), reverse=True, key=lambda x:x[1])[1:6]
     recommended_movies = [df_ml.iloc[movie_id[0]].title for movie_id in movie_list]
     return {'lista recomendada': recommended_movies}
+"""
