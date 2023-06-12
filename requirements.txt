@@ -13,7 +13,7 @@ openpyxl==3.1.2
 pandas
 pydantic==1.10.9
 python-dateutil==2.8.2
-python-dotenv==1.0.0
+python-dotenv
 pytz==2023.3
 PyYAML==6.0
 scikit-learn==1.2.2
